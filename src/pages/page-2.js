@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
+import '@/styles/base.global';
+
 const SecondPage = (props) => (
   <div>
     <h1>{props.headline}</h1>

@@ -1,13 +1,43 @@
-# gatsby-starter-default
-The default Gatsby starter
+# A Custom Gatsby Starter
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Setup
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Install Gatsby:
 ```
-gatsby new gatsby-example-site
+npm install -g gatsby-cli
+```
+Install dependencies:
+```
+yarn install OR
+npm install
 ```
 
-## Deploy
+Start the local environment:
+```
+gatsby develop
+```
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Site will open at `localhost:8000`
+
+To build for production:
+```
+gatsby build
+```
+
+## Source Code Directory Structure
+
+Front-end resources are located under `src`:
+
+  - `/assets`
+    - Images/gifs live here
+  - `/components`
+    - React components live here. Arranged as an `index.js` file and a component-named `scss` file, imported as a CSS Module
+  - `/layouts`
+    - Base page layout. Contains the `<head>` tag elements in component `Helmet`
+  - `/pages`
+    - Individual html pages. Use these filename as page name passed to the `Link` component
+  - `/styles`
+    - Global/shared styles only
+    - Use `module-import.global.scss` as an importable module in other `scss` to access custom vars/mixins
+    - `/_custom`
+      - Custom vars/mixins files live here.
