@@ -1,5 +1,14 @@
 # A Custom Gatsby Starter
 
+Boilerplate [Gatsby](http://gatsbyjs.org) starter for getting up and running writing React.
+
+## Features
+
+ESLint with custom configuration,
+SASS,
+CSS Modules,
+Prettier
+
 ## Setup
 
 Install Gatsby:
