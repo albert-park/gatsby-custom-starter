@@ -7,7 +7,8 @@ Boilerplate [Gatsby](http://gatsbyjs.org) starter for getting up and running wri
 ESLint with custom configuration,
 SASS,
 CSS Modules,
-Prettier
+Prettier,
+Axios
 
 ## Setup
 
