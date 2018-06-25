@@ -1,14 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Layout from '../components/layout';
 
 const IndexPage = (props) => (
-  <div>
-    <h1>{props.headline}</h1>
-    <p>{props.paragraph1}</p>
-    <p>{props.paragraph2}</p>
-    <Link to={props.linkUrl}>{props.linkText}</Link>
-  </div>
+  <Layout>
+    <div>
+      <h1>{props.headline}</h1>
+      <p>{props.paragraph1}</p>
+      <p>{props.paragraph2}</p>
+      <Link
+        to={props.linkUrl}
+        activeStyle={{
+          color: 'red'
+        }}
+      >
+        {props.linkText}
+      </Link>
+    </div>
+  </Layout>
 );
 
 IndexPage.propTypes = {

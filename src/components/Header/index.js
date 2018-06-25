@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import styles from './header.module';
-import '@/styles/base.global';
+import styles from './header.module.scss';
+import '../../styles/base.global.scss';
 
 const Header = () => (
   <div className={styles['header']}>

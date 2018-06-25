@@ -1,7 +1,7 @@
 // Custom Variables and Mixins
-@import "~@/styles/_custom/vars.global";
-@import "~@/styles/_custom/mixins.global";
-@import "~@/styles/_custom/fonts.global";
+@import "./_custom/vars.global.scss";
+@import "./_custom/mixins.global.scss";
+@import "./_custom/fonts.global.scss";
 body {
     background-color: white;
     font-family: $main-font;

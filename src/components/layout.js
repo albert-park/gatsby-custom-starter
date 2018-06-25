@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Header from '@/components/Header';
-import styles from '@/layouts/layouts.module';
-import '@/styles/base.global';
+import Header from '../components/Header';
+import styles from './layouts.module.scss';
+import '../styles/base.global.scss';
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ({ children }) => (
   <div>
     <Helmet
       title="Gatsby Default Starter"
@@ -17,13 +17,13 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     <div className={styles['layout']}>
-      {children()}
+      {children}
     </div>
   </div>
 );
 
-TemplateWrapper.propTypes = {
+Layout.propTypes = {
   children: PropTypes.func,
 };
 
-export default TemplateWrapper;
+export default Layout;
