@@ -51,3 +51,7 @@ Front-end resources are located under `src`:
     - Use `module-import.global.scss` as an importable module in other `scss` to access custom vars/mixins
     - `/_custom`
       - Custom vars/mixins files live here.
+      - Defines custom breakpoints:
+        - Mobile: 768px
+        - Tablet: 1024px
+        - Desktop: 1280px
